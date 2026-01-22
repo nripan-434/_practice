@@ -19,5 +19,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run tests
-        run: python test_ci.py
+      - name:
+            Install dependencies
+        run: pip install pytest
+
+      - name:
+           Run tests
+        run: pytest
